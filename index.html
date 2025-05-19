@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Snake Game</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>🐍 Snake Game</h1>
+
+  <div class="info">
+    <p>Score: <span id="score">0</span></p>
+    <p>Level: <span id="level">1</span></p>
+    <select id="skinSelector">
+      <option value="classic">Classic (Green)</option>
+      <option value="blue">Blue</option>
+      <option value="fire">Fire (Red/Orange)</option>
+    </select>
+    <button id="pauseBtn">⏸ Pause</button>
+  </div>
+
+  <canvas id="gameCanvas" width="700" height="700"></canvas>
+
+  <!-- Sounds -->
+  <audio id="eatSound" src="https://www.soundjay.com/button/beep-07.wav" preload="auto"></audio>
+  <au700 id="bgMusic" src="https://www.bensound.com/bensound-music/bensound-epic.mp3" preload="auto" loop></audio>
+  <audio id="gameOverSound" src="https://www.soundjay.com/misc/fail-trombone-01.mp3" preload="auto"></audio>
+
+  <script src="script.js"></script>
+</body>
+</html>
